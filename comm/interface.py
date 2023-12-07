@@ -60,7 +60,6 @@ class COMM_Serial(COMM_Interface):
             return False
 
         if self.serial.in_waiting == 0:
-            self.serial.read(self.serial.in_waiting)
             return False
 
         data.clear()
