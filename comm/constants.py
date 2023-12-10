@@ -1,4 +1,4 @@
-from enum import Enum
+from enum import IntEnum
 
 COMM_HEADER                                     = "COMM"
 COMM_DIR_WRITE                                  = 0
@@ -24,7 +24,7 @@ COMM_PAYLOAD_LEN_END                            = COMM_PAYLOAD_LEN_OFFSET + COMM
 
 COMM_COMMAND_ECHO                               = 0x00
 
-class COMM_STATUS(Enum):
+class COMM_STATUS(IntEnum):
     FAIL            = 0,
     SUCCESS         = 1,
     FORMAT_ERROR    = 0xE1,
