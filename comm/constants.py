@@ -22,7 +22,7 @@ COMM_DIR_END                                    = COMM_DIR_OFFSET + COMM_DIR_SIZ
 COMM_COMMAND_END                                = COMM_COMMAND_OFFSET + COMM_COMMAND_SIZE
 COMM_PAYLOAD_LEN_END                            = COMM_PAYLOAD_LEN_OFFSET + COMM_PAYLOAD_LEN_SIZE
 
-COMM_COMMAND_ECHO                               = 0x01
+COMM_COMMAND_ECHO                               = 0x00
 
 class COMM_STATUS(Enum):
     FAIL            = 0,
